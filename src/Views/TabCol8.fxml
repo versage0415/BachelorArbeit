@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="421.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TabCol8">
+   <children>
+      <TableView fx:id="AchtTabCol" layoutX="102.0" layoutY="41.0" prefHeight="170.0" prefWidth="722.0">
+        <columns>
+            <TableColumn fx:id="TabCol1" prefWidth="85.0" text="Header1" />
+          <TableColumn fx:id="TabCol2" prefWidth="94.0" text="Header2" />
+          <TableColumn fx:id="TabCol3" prefWidth="92.0" text="Header3" />
+            <TableColumn fx:id="TabCol4" prefWidth="94.0" text="Header4" />
+            <TableColumn fx:id="TabCol5" prefWidth="83.0" text="Header5" />
+            <TableColumn fx:id="TabCol6" prefWidth="91.0" text="Header6" />
+            <TableColumn fx:id="TabCol7" prefWidth="91.0" text="Header7" />
+            <TableColumn fx:id="TabCol8" prefWidth="90.0" text="Header8" />
+        </columns>
+      </TableView>
+      <Label fx:id="TableName" layoutX="398.0" layoutY="14.0" prefHeight="27.0" prefWidth="98.0" text="TableName" textFill="#1b2b90">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ValueEins" layoutX="64.0" layoutY="270.0" prefHeight="25.0" prefWidth="89.0" />
+      <TextField fx:id="ValueZwei" layoutX="153.0" layoutY="270.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="ValueDrei" layoutX="251.0" layoutY="270.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="ValueVier" layoutX="349.0" layoutY="270.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="ValueFuenf" layoutX="447.0" layoutY="270.0" prefHeight="25.0" prefWidth="105.0" />
+      <TextField fx:id="ValueSechs" layoutX="552.0" layoutY="270.0" prefHeight="25.0" prefWidth="98.0" />
+      <Button fx:id="add" layoutX="864.0" layoutY="270.0" mnemonicParsing="false" onAction="#AddButtonOnClick" text="add" />
+      <TextField fx:id="ValueSieben" layoutX="650.0" layoutY="270.0" prefHeight="25.0" prefWidth="105.0" />
+      <TextField fx:id="ValueAcht" layoutX="755.0" layoutY="270.0" prefHeight="25.0" prefWidth="98.0" />
+      <Button fx:id="save" layoutX="414.0" layoutY="322.0" mnemonicParsing="false" onAction="#SaveButtonOnClick" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="set" layoutX="864.0" layoutY="226.0" mnemonicParsing="false" onAction="#SetButtonOnClick" text="set" />
+      <TextField fx:id="HeaderName1" layoutX="60.0" layoutY="226.0" prefHeight="25.0" prefWidth="98.0" promptText="Enter HeaderName1" />
+      <TextField fx:id="HeaderName2" layoutX="162.0" layoutY="226.0" prefHeight="25.0" prefWidth="98.0" promptText="Enter HeaderName2" />
+      <TextField fx:id="HeaderName3" layoutX="260.0" layoutY="226.0" prefHeight="25.0" prefWidth="105.0" promptText="Enter HeaderName3" />
+      <TextField fx:id="HeaderName4" layoutX="365.0" layoutY="226.0" prefHeight="25.0" prefWidth="98.0" promptText="Enter HeaderName4" />
+      <TextField fx:id="HeaderName5" layoutX="463.0" layoutY="226.0" prefHeight="25.0" prefWidth="89.0" promptText="Enter HeaderName5" />
+      <TextField fx:id="HeaderName6" layoutX="552.0" layoutY="226.0" prefHeight="25.0" prefWidth="98.0" promptText="Enter HeaderName6" />
+      <TextField fx:id="HeaderName7" layoutX="650.0" layoutY="226.0" prefHeight="25.0" prefWidth="98.0" promptText="Enter HeaderName7" />
+      <TextField fx:id="HeaderName8" layoutX="748.0" layoutY="226.0" prefHeight="25.0" prefWidth="105.0" promptText="Enter HeaderName8" />
+   </children>
+</AnchorPane>

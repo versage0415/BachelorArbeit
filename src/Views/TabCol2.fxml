@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="432.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TabCol2">
+   <children>
+      <Label fx:id="TableName" layoutX="333.0" layoutY="14.0" text="TableName">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ZweiTabCol" layoutX="265.0" layoutY="41.0" prefHeight="196.0" prefWidth="242.0">
+        <columns>
+          <TableColumn fx:id="TabCol1" prefWidth="118.0" text="Header1" />
+          <TableColumn fx:id="TabCol2" prefWidth="121.0" text="Header2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="ValueEins" layoutX="249.0" layoutY="278.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="ValueZwei" layoutX="386.0" layoutY="278.0" prefHeight="25.0" prefWidth="130.0" />
+      <Button fx:id="add" layoutX="551.0" layoutY="278.0" mnemonicParsing="false" onAction="#AddButtonOnClick" text="add" />
+      <TextField fx:id="HeaderName1" layoutX="249.0" layoutY="242.0" prefHeight="25.0" prefWidth="130.0" promptText="Enter HeaderName1" />
+      <TextField fx:id="HeaderName2" layoutX="386.0" layoutY="242.0" prefHeight="25.0" prefWidth="130.0" promptText="Enter HeaderName2" />
+      <Button fx:id="set" layoutX="551.0" layoutY="242.0" mnemonicParsing="false" onAction="#SetButtonOnClick" prefHeight="25.0" prefWidth="37.0" text="set" />
+      <Button fx:id="save" layoutX="355.0" layoutY="337.0" mnemonicParsing="false" onAction="#SaveButtonOnClick" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

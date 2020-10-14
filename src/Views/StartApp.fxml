@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+   <children>
+      <Button fx:id="TableSetting" layoutX="78.0" layoutY="578.0" mnemonicParsing="false" onAction="#HandleButtonOnClick" text="Table Setting">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="339.0" layoutY="28.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="268.0" text="Welcome to MCQ Generator!" textAlignment="JUSTIFY" textFill="#4d7541" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font></Label>
+      <ImageView fx:id="ImageArea" fitHeight="442.0" fitWidth="724.0" layoutX="168.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="GoToAndministratorV" layoutX="694.0" layoutY="578.0" mnemonicParsing="false" onAction="#GoToAndministratorVButton" text="Go To Administrator View">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

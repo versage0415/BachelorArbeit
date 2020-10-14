@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CompactTableBuilder">
+   <children>
+      <TextField fx:id="textfield" layoutX="44.0" layoutY="40.0" prefHeight="25.0" prefWidth="228.0" promptText="Enter the Name of the Table" />
+      <ComboBox fx:id="combo" layoutX="593.0" layoutY="40.0" onAction="#ComboEvent" prefHeight="25.0" prefWidth="236.0" promptText="Choose the Number of Column" />
+      <AnchorPane fx:id="anchor" layoutX="75.0" layoutY="121.0" prefHeight="432.0" prefWidth="728.0" style="-fx-border-color: #988c8c;" />
+   </children>
+</AnchorPane>

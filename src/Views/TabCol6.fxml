@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="432.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TabCol6">
+   <children>
+      <TableView fx:id="SechsTabCol" layoutX="22.0" layoutY="53.0" prefHeight="175.0" prefWidth="685.0">
+        <columns>
+          <TableColumn fx:id="TabCol1" prefWidth="119.0" text="Header1" />
+          <TableColumn fx:id="TabCol2" prefWidth="123.0" text="Header2" />
+            <TableColumn fx:id="TabCol3" prefWidth="117.0" text="Header3" />
+            <TableColumn fx:id="TabCol4" prefWidth="106.0" text="Header4" />
+            <TableColumn fx:id="TabCol5" prefWidth="105.0" text="Header5" />
+            <TableColumn fx:id="TabCol6" prefWidth="115.0" text="Header6" />
+        </columns>
+      </TableView>
+      <Label fx:id="TableName" layoutX="347.0" layoutY="14.0" prefHeight="27.0" prefWidth="93.0" text="TableName" textFill="#1d67ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="VakueEins" layoutX="13.0" layoutY="304.0" prefHeight="25.0" prefWidth="93.0" />
+      <TextField fx:id="ValueZwei" layoutX="106.0" layoutY="304.0" prefHeight="25.0" prefWidth="93.0" />
+      <TextField fx:id="ValueDrei" layoutX="199.0" layoutY="304.0" prefHeight="25.0" prefWidth="93.0" />
+      <TextField fx:id="ValueVier" layoutX="292.0" layoutY="304.0" prefHeight="25.0" prefWidth="93.0" />
+      <TextField fx:id="ValueFuenf" layoutX="385.0" layoutY="304.0" prefHeight="25.0" prefWidth="86.0" />
+      <TextField fx:id="ValueSechs" layoutX="471.0" layoutY="304.0" prefHeight="25.0" prefWidth="101.0" />
+      <Button fx:id="add" layoutX="634.0" layoutY="304.0" mnemonicParsing="false" onAction="#AddButtonOnClick" text="add" />
+      <Button fx:id="save" layoutX="340.0" layoutY="371.0" mnemonicParsing="false" onAction="#SaveButtonOnClick" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="set" layoutX="636.0" layoutY="268.0" mnemonicParsing="false" onAction="#SetButtonOnClick" text="set" />
+      <TextField fx:id="HeaderName1" layoutX="13.0" layoutY="268.0" prefHeight="25.0" prefWidth="93.0" promptText="Enter HeaderName1" />
+      <TextField fx:id="HeaderName2" layoutX="106.0" layoutY="268.0" prefHeight="25.0" prefWidth="93.0" promptText="Enter HeaderName2" />
+      <TextField fx:id="HeaderName3" layoutX="199.0" layoutY="268.0" prefHeight="25.0" prefWidth="93.0" promptText="Enter HeaderName3" />
+      <TextField fx:id="HeaderName4" layoutX="292.0" layoutY="268.0" prefHeight="25.0" prefWidth="93.0" promptText="Enter HeaderName4" />
+      <TextField fx:id="HeaderName5" layoutX="385.0" layoutY="268.0" prefHeight="25.0" prefWidth="86.0" promptText="Enter HeaderName5" />
+      <TextField fx:id="HeaderName6" layoutX="471.0" layoutY="268.0" prefHeight="25.0" prefWidth="101.0" promptText="Enter HeaderName6" />
+   </children>
+</AnchorPane>

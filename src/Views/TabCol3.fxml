@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="432.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TabCol3">
+   <children>
+      <Label fx:id="TableName" layoutX="331.0" layoutY="33.0" text="TableName" textFill="#254fb9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="DreiTabCol" layoutX="179.0" layoutY="69.0" prefHeight="195.0" prefWidth="364.0">
+        <columns>
+          <TableColumn fx:id="TabCol1" prefWidth="129.0" text="Header1" />
+          <TableColumn fx:id="TabCol2" prefWidth="123.0" text="Header2" />
+            <TableColumn fx:id="TabCol3" prefWidth="112.0" text="Header3" />
+        </columns>
+      </TableView>
+      <TextField fx:id="ValueEins" layoutX="170.0" layoutY="313.0" prefHeight="25.0" prefWidth="122.0" />
+      <TextField fx:id="ValueZwei" layoutX="294.0" layoutY="313.0" prefHeight="25.0" prefWidth="122.0" />
+      <TextField fx:id="ValueDrei" layoutX="420.0" layoutY="313.0" prefHeight="25.0" prefWidth="122.0" />
+      <Button fx:id="add" layoutX="553.0" layoutY="313.0" mnemonicParsing="false" onAction="#AddButtonOnClick" text="add" />
+      <Button fx:id="save" layoutX="331.0" layoutY="358.0" mnemonicParsing="false" onAction="#SaveButtonOnClick" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="set" layoutX="553.0" layoutY="281.0" mnemonicParsing="false" onAction="#SetButtonOnClick" prefHeight="25.0" prefWidth="37.0" text="set" />
+      <TextField fx:id="HeaderName1" layoutX="170.0" layoutY="281.0" prefHeight="25.0" prefWidth="122.0" promptText="Enter HeaderName1" />
+      <TextField fx:id="HeaderName2" layoutX="294.0" layoutY="281.0" prefHeight="25.0" prefWidth="122.0" promptText="Enter HeaderName2" />
+      <TextField fx:id="HeaderName3" layoutX="420.0" layoutY="281.0" prefHeight="25.0" prefWidth="122.0" promptText="Enter HeaderName3" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: Controllers.Main
+Class-Path: C:\Users\steph\IdeaProjects\BachelorArbeitVersion7\src\Contr
+ ollers
+

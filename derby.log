@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Aug 26 10:55:48 CEST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0174-29fa-fad4-00000464b308 
+on database directory C:\Users\steph\IdeaProjects\BachelorArbeitVersion7\lib\bachelorarbeit with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/C:/Users/steph/IdeaProjects/BachelorArbeitVersion7/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_151-b12
+user.dir=C:\Users\steph\IdeaProjects\BachelorArbeitVersion7
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

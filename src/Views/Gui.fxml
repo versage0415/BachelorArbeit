@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="843.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Gui">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="4.0" prefHeight="837.0" prefWidth="200.0" style="-fx-background-color: #898383; -fx-border-color: #1a1818;" AnchorPane.bottomAnchor="2.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <ListView fx:id="RelationList" layoutX="5.0" layoutY="23.0" prefHeight="216.0" prefWidth="190.0" />
+            <Label layoutX="55.0" layoutY="6.0" prefHeight="17.0" prefWidth="90.0" text="Relations List" textFill="#2f279a">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="410.0" prefHeight="17.0" prefWidth="90.0" text="operator list" textFill="#2f279a">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <ListView fx:id="OperatorList" layoutX="5.0" layoutY="431.0" prefHeight="230.0" prefWidth="190.0" />
+            <Button fx:id="CreateNewRelation" layoutX="6.0" layoutY="290.0" mnemonicParsing="false" onAction="#CreateNewRelationBtn" prefHeight="25.0" prefWidth="190.0" text="Create new Relation" />
+            <Button fx:id="DropRelation" layoutX="6.0" layoutY="321.0" mnemonicParsing="false" onAction="#DropRelationBtn" prefHeight="25.0" prefWidth="190.0" text="Drop Relation" />
+            <Button fx:id="ShowRelation" layoutX="6.0" layoutY="355.0" mnemonicParsing="false" onAction="#ShowRelationBtn" prefHeight="25.0" prefWidth="190.0" text="Show Relation" />
+            <Button fx:id="loadExo" layoutX="5.0" layoutY="257.0" mnemonicParsing="false" onAction="#RefreshRelationListBtn" prefHeight="25.0" prefWidth="190.0" text="Refresh list Relation" />
+            <Label layoutX="47.0" layoutY="668.0" prefHeight="17.0" prefWidth="90.0" text="list of Questions" textFill="#2f279a">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <ListView fx:id="QuestionList" layoutX="5.0" layoutY="685.0" prefHeight="106.0" prefWidth="190.0" />
+            <Button fx:id="ShowQuestion" layoutX="36.0" layoutY="798.0" mnemonicParsing="false" onAction="#ShowQuestionBtn" prefHeight="25.0" prefWidth="112.0" text="Show Exercice">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Help" layoutX="6.0" layoutY="384.0" mnemonicParsing="false" onAction="#HelpBtn" prefHeight="25.0" prefWidth="190.0" text="Help">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ErrorPane" layoutX="215.0" layoutY="764.0" prefHeight="33.0" prefWidth="829.0" style="-fx-border-color: #ea3030;" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="8.0" />
+      <AnchorPane fx:id="anchorMainWindows" layoutX="214.0" layoutY="22.0" prefHeight="684.0" prefWidth="829.0" style="-fx-border-color: #000000;" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="22.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="450.0" fitWidth="829.0" layoutX="-1.0" layoutY="-1.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="2.0">
+               <image>
+                  <Image url="@StartApp1.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="question1" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="808.0" visible="false">
+               <children>
+                  <AnchorPane fx:id="anchorMainTable1" layoutX="227.0" layoutY="14.0" prefHeight="153.0" prefWidth="200.0" style="-fx-border-color: #514c4c;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="6.0" prefHeight="17.0" prefWidth="52.0" text="Table" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorOperator" layoutX="277.0" layoutY="205.0" prefHeight="38.0" prefWidth="113.0" style="-fx-border-color: #514c4c;">
+                     <children>
+                        <Label fx:id="labelOperator" layoutX="33.0" layoutY="11.0" text="Operator">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="93.0" endY="6.0" layoutX="234.0" layoutY="162.0" startX="93.0" startY="43.0" />
+                  <AnchorPane fx:id="anchorRelation1" layoutX="20.0" layoutY="293.0" prefHeight="153.0" prefWidth="147.0" style="-fx-border-color: #514c4c;" />
+                  <AnchorPane fx:id="anchorRelation2" layoutX="180.0" layoutY="293.0" prefHeight="153.0" prefWidth="147.0" style="-fx-border-color: #514c4c;" />
+                  <AnchorPane fx:id="anchorRelation3" layoutX="344.0" layoutY="293.0" prefHeight="153.0" prefWidth="147.0" style="-fx-border-color: #514c4c;" />
+                  <AnchorPane fx:id="anchorRelation4" layoutX="509.0" layoutY="293.0" prefHeight="153.0" prefWidth="147.0" style="-fx-border-color: #514c4c;" />
+                  <Line endX="93.0" endY="6.0" layoutX="209.0" layoutY="238.0" startX="-87.0" startY="55.0" />
+                  <Line fx:id="file2" endX="96.0" endY="-5.0" layoutX="219.0" layoutY="248.0" startX="52.0" startY="45.0" />
+                  <Line fx:id="file3" endX="108.0" endY="-15.0" layoutX="229.0" layoutY="258.0" startX="149.0" startY="33.0" />
+                  <Line fx:id="File4" endX="108.0" endY="-15.0" layoutX="251.0" layoutY="259.0" startX="319.0" startY="34.0" />
+                  <Line fx:id="FilQuestion1" endX="79.0" endY="17.0" layoutX="311.0" layoutY="207.0" startX="172.0" startY="3.0" />
+                  <ListView fx:id="ConstraintList" layoutX="483.0" layoutY="165.0" prefHeight="82.0" prefWidth="200.0" />
+                  <TextField fx:id="TextInputQuestion1" layoutX="484.0" layoutY="197.0" promptText="enter the condition" visible="false" />
+                  <Label fx:id="Relation1Q1" layoutX="42.0" layoutY="273.0" prefHeight="17.0" prefWidth="52.0" text="Relation1" />
+                  <Label fx:id="Relation2Q1" layoutX="212.0" layoutY="273.0" prefHeight="17.0" prefWidth="52.0" text="Relation2" />
+                  <Label fx:id="Relation3Q1" layoutX="392.0" layoutY="275.0" prefHeight="17.0" prefWidth="52.0" text="Relation3" />
+                  <Label fx:id="Relation4Q1" layoutX="584.0" layoutY="275.0" prefHeight="17.0" prefWidth="52.0" text="Relation4" />
+                  <Label layoutX="175.0" layoutY="22.0" prefHeight="17.0" prefWidth="43.0" text="Table">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Question2" layoutX="-1.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="829.0" visible="false">
+               <children>
+                  <AnchorPane fx:id="PaneTab1" layoutX="127.0" layoutY="14.0" prefHeight="159.0" prefWidth="200.0" style="-fx-border-color: #514c4c;" />
+                  <AnchorPane fx:id="PaneTab2" layoutX="339.0" layoutY="14.0" prefHeight="159.0" prefWidth="200.0" style="-fx-border-color: #514c4c;" />
+                  <AnchorPane fx:id="PaneOperator" layoutX="271.0" layoutY="209.0" prefHeight="43.0" prefWidth="120.0" style="-fx-border-color: #514c4c;">
+                     <children>
+                        <Label fx:id="LabOperator" layoutX="36.0" layoutY="13.0" text="Operator">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="PaneRessultTab1" layoutX="98.0" layoutY="302.0" prefHeight="159.0" prefWidth="200.0" style="-fx-border-color: #514c4c;" />
+                  <Line endX="65.0" endY="1.0" layoutX="254.0" layoutY="208.0" startX="23.0" startY="-35.0" />
+                  <Line endX="51.0" endY="-22.0" layoutX="303.0" layoutY="231.0" startX="123.0" startY="-58.0" />
+                  <Line endX="-38.0" endY="18.0" layoutX="255.0" layoutY="284.0" startX="71.0" startY="-32.0" />
+                  <Line fx:id="fileQ2" endX="52.0" endY="-32.0" layoutX="339.0" layoutY="268.0" startX="147.0" startY="-27.5" />
+                  <TextField fx:id="constraintQ2" layoutX="487.0" layoutY="229.0" promptText="Enter the constraint" />
+                  <Label layoutX="74.0" layoutY="18.0" text="Table1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="550.0" layoutY="18.0" text="Table2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="PaneRessultTab2" layoutX="353.0" layoutY="302.0" prefHeight="159.0" prefWidth="200.0" style="-fx-border-color: #514c4c;" />
+                  <Line fx:id="fileRelation2Q2" endX="184.0" endY="10.0" layoutX="265.0" layoutY="294.0" startX="75.0" startY="-42.0" />
+                  <Label layoutX="10.0" layoutY="312.0" text="Relation 1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="562.0" layoutY="312.0" text="Relation 2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Question3" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="814.0" visible="false">
+               <children>
+                  <AnchorPane fx:id="PaneTab1Q3" layoutX="125.0" layoutY="14.0" prefHeight="159.0" prefWidth="200.0" style="-fx-border-color: #514c4c;" />
+                  <AnchorPane fx:id="PaneTab2Q3" layoutX="339.0" layoutY="14.0" prefHeight="159.0" prefWidth="200.0" style="-fx-border-color: #514c4c;" />
+                  <AnchorPane fx:id="PaneOperatorQ3" layoutX="271.0" layoutY="209.0" prefHeight="43.0" prefWidth="120.0" style="-fx-border-color: #514c4c;">
+                     <children>
+                        <Label fx:id="LabelOperatorQ3" layoutX="36.0" layoutY="13.0" text="Operator">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="PaneResultQ3" layoutX="239.0" layoutY="295.0" prefHeight="159.0" prefWidth="200.0" style="-fx-border-color: #514c4c;" />
+                  <Line endX="65.0" endY="1.0" layoutX="254.0" layoutY="208.0" startX="23.0" startY="-35.0" />
+                  <Line endX="51.0" endY="-22.0" layoutX="303.0" layoutY="231.0" startX="123.0" startY="-58.0" />
+                  <Line endX="71.0" endY="11.0" layoutX="255.0" layoutY="284.0" startX="71.0" startY="-32.0" />
+                  <Line fx:id="fileQ3" endX="52.0" endY="-32.0" layoutX="339.0" layoutY="268.0" startX="147.0" startY="-27.5" />
+                  <TextField fx:id="ConstraintQ3" layoutX="487.0" layoutY="229.0" prefHeight="25.0" prefWidth="159.0" promptText="Enter the condition" />
+                  <Label layoutX="167.0" layoutY="306.0" text="Relation 1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="18.0" text="Table 1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="544.0" layoutY="18.0" text="Table 2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Question4" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="814.0" visible="false">
+               <children>
+                  <AnchorPane fx:id="PaneTab1Q4" layoutX="14.0" layoutY="26.0" prefHeight="153.0" prefWidth="200.0" style="-fx-border-color: #514c4c;" />
+                  <AnchorPane fx:id="PaneOperator1Q4" layoutX="42.0" layoutY="222.0" prefHeight="38.0" prefWidth="113.0" style="-fx-border-color: #514c4c;">
+                     <children>
+                        <Label fx:id="LabelOperator1Q4" layoutX="31.0" layoutY="11.0" prefHeight="17.0" prefWidth="73.0" text="Operator 1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="92.5" endY="-7.0" layoutX="6.0" layoutY="186.0" startX="92.5" startY="36.0" />
+                  <AnchorPane fx:id="SubResultTab1Q4" layoutX="25.0" layoutY="293.0" prefHeight="153.0" prefWidth="147.0" style="-fx-border-color: #514c4c;" />
+                  <AnchorPane fx:id="ResultTab2Q4" layoutX="272.0" layoutY="301.0" prefHeight="153.0" prefWidth="147.0" style="-fx-border-color: #514c4c;" />
+                  <Line endX="107.5" endY="-1.0" layoutX="-9.0" layoutY="261.0" startX="108.0" startY="35.0" />
+                  <Line endX="54.0" endY="34.0" layoutX="118.0" layoutY="344.0" startX="112.0" startY="34.0" />
+                  <Line endX="247.0" endY="-227.0" layoutX="-23.0" layoutY="369.0" startX="253.5" startY="8.5" />
+                  <Line endX="162.0" endY="9.0" layoutX="175.0" layoutY="170.0" startX="250.0" startY="52.0" />
+                  <AnchorPane fx:id="PaneTab2Q4" layoutX="245.0" layoutY="26.0" prefHeight="153.0" prefWidth="200.0" style="-fx-border-color: #514c4c;" />
+                  <AnchorPane fx:id="PaneTab3Q4" layoutX="476.0" layoutY="26.0" prefHeight="153.0" prefWidth="200.0" style="-fx-border-color: #514c4c;" />
+                  <Label layoutX="245.0" layoutY="9.0" prefHeight="17.0" prefWidth="52.0" text="Table 2" />
+                  <Label layoutX="476.0" layoutY="9.0" prefHeight="17.0" prefWidth="52.0" text="Table 3" />
+                  <Line endX="54.5" endY="34.5" layoutX="169.0" layoutY="107.0" startX="76.0" startY="34.0" />
+                  <AnchorPane fx:id="PaneOperator2Q4" layoutX="389.0" layoutY="222.0" prefHeight="38.0" prefWidth="113.0" style="-fx-border-color: #514c4c;">
+                     <children>
+                        <Label fx:id="LabelOperator2Q4" layoutX="31.0" layoutY="11.0" text="Operator 2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="304.0" endY="-2.0" layoutX="272.0" layoutY="181.0" startX="173.5" startY="41.0" />
+                  <Line endX="255.0" endY="1.0" layoutX="190.0" layoutY="260.0" startX="155.5" startY="41.0" />
+                  <AnchorPane fx:id="ResultTab3Q4" layoutX="429.0" layoutY="302.0" prefHeight="153.0" prefWidth="147.0" style="-fx-border-color: #514c4c;" />
+                  <Line endX="159.0" endY="1.0" layoutX="308.0" layoutY="259.0" startX="181.0" startY="43.0" />
+                  <Label layoutX="496.0" layoutY="278.0" prefHeight="17.0" prefWidth="65.0" text="Relation 3" />
+                  <Label layoutX="273.0" layoutY="278.0" prefHeight="17.0" prefWidth="59.0" text="Relation 2" />
+                  <Label layoutX="31.0" layoutY="269.0" prefHeight="17.0" prefWidth="59.0" text="Relation 1" />
+                  <Label layoutX="16.0" layoutY="9.0" prefHeight="17.0" prefWidth="52.0" text="Table 1" />
+                  <ListView fx:id="ConstraintListOperator2Q4" layoutX="544.0" layoutY="206.0" prefHeight="53.0" prefWidth="120.0" visible="false" />
+                  <ListView fx:id="ConstraintListOperator1Q4" layoutX="246.0" layoutY="215.0" prefHeight="53.0" prefWidth="113.0" visible="false" />
+                  <Line endX="149.0" endY="9.0" layoutX="6.0" layoutY="232.0" startX="240.0" startY="9.5" />
+                  <Line fx:id="FileQ4" endX="189.0" endY="9.5" layoutX="313.0" layoutY="232.0" startX="231.0" startY="9.5" />
+                  <TextField fx:id="ConstraintOperator2Q4" layoutX="541.0" layoutY="230.0" prefHeight="25.0" prefWidth="139.0" promptText="Enter The Condition" />
+                  <TextField fx:id="ConstraintOperator1Q4" layoutX="247.0" layoutY="228.0" prefHeight="25.0" prefWidth="132.0" promptText="Enter the Condition" />
+                  <AnchorPane fx:id="ResultTab4Q4" layoutX="586.0" layoutY="302.0" prefHeight="153.0" prefWidth="147.0" style="-fx-border-color: #514c4c;" />
+                  <Label layoutX="664.0" layoutY="278.0" prefHeight="17.0" prefWidth="65.0" text="Relation 4" />
+                  <Line endX="56.0" endY="17.0" layoutX="427.0" layoutY="243.0" startX="200.0" startY="59.0" />
+               </children>
+            </AnchorPane>
+            <GridPane fx:id="GridpaneQ1" layoutX="34.0" layoutY="574.0" prefHeight="106.0" prefWidth="787.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="9.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <CheckBox fx:id="Answer1" mnemonicParsing="false" text="Answer1" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="Answer2" layoutX="10.0" layoutY="12.0" mnemonicParsing="false" text="Answer2" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="Answer3" layoutX="10.0" layoutY="12.0" mnemonicParsing="false" text="Answer3" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="Answer4" layoutX="10.0" layoutY="12.0" mnemonicParsing="false" text="Answer4" GridPane.rowIndex="4" />
+                  <Label fx:id="Question" prefHeight="17.0" prefWidth="784.0" text="Enter the Question hier!">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+      <Label layoutX="228.0" layoutY="6.0" prefHeight="17.0" prefWidth="90.0" text="Build Exercices">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="GenerateAnswers" layoutX="510.0" layoutY="715.0" mnemonicParsing="false" onAction="#GenerateAnswersBtn" prefHeight="25.0" prefWidth="112.0" text="Result" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="SetNewAnswers" layoutX="414.0" layoutY="715.0" mnemonicParsing="false" onAction="#SetNewAnswersBtn" prefHeight="25.0" prefWidth="89.0" text="Edit Answers" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="LoadTable1" layoutX="735.0" layoutY="715.0" mnemonicParsing="false" onAction="#LoadTable1Btn" prefHeight="25.0" prefWidth="80.0" text="Load Table1" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="LoadTable2" layoutX="819.0" layoutY="715.0" mnemonicParsing="false" onAction="#LoadTable2Btn" prefHeight="25.0" prefWidth="92.0" text="Load Table2" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="LoadOperator1" layoutX="299.0" layoutY="715.0" mnemonicParsing="false" onAction="#LoadOperator1Btn" prefHeight="25.0" prefWidth="96.0" text="load operator 1" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="LoadOperator" layoutX="308.0" layoutY="715.0" mnemonicParsing="false" onAction="#LoadOperatorBtn" prefHeight="25.0" prefWidth="90.0" text="load operator" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="LoadOperator2" layoutX="631.0" layoutY="715.0" mnemonicParsing="false" onAction="#LoadOperator2Btn" prefHeight="25.0" prefWidth="96.0" text="load operator 2" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="LoadTable" layoutX="639.0" layoutY="715.0" mnemonicParsing="false" onAction="#LoadTableBtn" prefHeight="25.0" prefWidth="80.0" text="Load Table" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="GenerateSubresult" layoutX="918.0" layoutY="715.0" mnemonicParsing="false" onAction="#GenerateSubresultBtn" prefHeight="25.0" prefWidth="120.0" text="Subresult" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="refresh" layoutX="214.0" layoutY="715.0" mnemonicParsing="false" onAction="#RefreshBtn" prefHeight="25.0" prefWidth="59.0" text="Refresh">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

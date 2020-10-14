@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.help">
+   <children>
+      <TextArea editable="false" layoutX="47.0" layoutY="64.0" prefHeight="368.0" prefWidth="422.0" text="The MCQ Generator ist a tool for Teaching and&#10;Learning Purpose.&#10;&#10;With this Tool Professor can build Exercice &#10;and Load it in a E-Assessment-System(Jack).&#10;&#10;For Generating Exercices 2,we have to follow&#10; this steps:&#10;(1)   First select Exercice 2 and press the &#10;      &quot;show Exercice&quot; Button&#10;(2)   Select two Relations that you want to work with&#10;      and press the button &quot;load Table 1&quot;&#10;      and &quot;load Table 2&quot; to load them in the box&#10;&#10;(3)   Select an Operator and press the &#10;      &quot;Load Operator&quot; button&#10;(5)   Press the &quot;Result&quot; button to show the &#10;      possible table&#10;(6)   Edit the Question and Answers throught &#10;       &quot;Edit Answers&quot; button&#10;&#10;&#10;The Red Box is to Show Error during the &#10;Runtime.&#10;">
+         <font>
+            <Font name="Arial monospaced for SAP Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="115.0" layoutY="29.0" prefHeight="20.0" prefWidth="205.0" text="How to use the MCQ Generator?" textFill="#1f31b5">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
