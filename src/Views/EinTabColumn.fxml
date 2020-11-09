@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="548.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EinTabColumn">
+   <children>
+      <TableView fx:id="EinTabCol" layoutX="200.0" layoutY="109.0" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="TabCol" prefWidth="199.0" text="Header" />
+         </columns></TableView>
+      <Button fx:id="CreateNewTable" layoutX="43.0" layoutY="466.0" mnemonicParsing="false" onAction="#CreateNewTableButtonOnClick" prefHeight="30.0" prefWidth="135.0" text="Create new Table">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="NameTable" layoutX="239.0" layoutY="60.0" prefHeight="27.0" prefWidth="103.0" text="TableName" textFill="#12229a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AddValue" layoutX="200.0" layoutY="385.0" prefHeight="25.0" prefWidth="200.0" promptText="Insert Value" />
+      <Button fx:id="addButton" layoutX="430.0" layoutY="385.0" mnemonicParsing="false" onAction="#AddButtonOnClick" text="add" />
+      <Button fx:id="submit" layoutX="430.0" layoutY="466.0" mnemonicParsing="false" onAction="#SubmitButtonOnClick" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Save" layoutX="274.0" layoutY="469.0" mnemonicParsing="false" onAction="#SaveButtonOnClick" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="set" layoutX="430.0" layoutY="356.0" mnemonicParsing="false" onAction="#SetButtonOnClick" prefHeight="25.0" prefWidth="37.0" text="set" />
+      <TextField fx:id="HeaderName" layoutX="200.0" layoutY="356.0" prefHeight="25.0" prefWidth="200.0" promptText="Enter the HeaderName" />
+   </children>
+</AnchorPane>

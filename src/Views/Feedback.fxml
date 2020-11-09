@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="527.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Feedback">
+   <children>
+      <Label layoutX="312.0" layoutY="53.0" prefHeight="27.0" prefWidth="91.0" text="Feedback" textFill="#1f3bc9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="11.0" layoutY="158.0" prefHeight="166.0" prefWidth="676.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <CheckBox fx:id="RAnswer1" mnemonicParsing="false" prefHeight="17.0" prefWidth="93.0" text="RAnswer1" />
+            <CheckBox fx:id="RAnswer2" mnemonicParsing="false" prefHeight="17.0" prefWidth="90.0" text="RAnswer2" GridPane.rowIndex="1" />
+            <CheckBox fx:id="RAnswer3" mnemonicParsing="false" prefHeight="17.0" prefWidth="88.0" text="RAnswer3" GridPane.rowIndex="2" />
+            <CheckBox fx:id="RAnswer4" mnemonicParsing="false" prefHeight="17.0" prefWidth="86.0" text="RAnswer4" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button fx:id="exit" layoutX="558.0" layoutY="461.0" mnemonicParsing="false" onAction="#HandleButtonOnClick" text="Exit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="153.0" layoutY="114.0" prefHeight="20.0" prefWidth="174.0" text="The Correct Answer are!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="feedback" layoutX="73.0" layoutY="364.0" prefHeight="19.0" prefWidth="154.0" text="Feedback of your Answer">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="87.0" layoutY="461.0" mnemonicParsing="false" onAction="#HandleButtonOnClick" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

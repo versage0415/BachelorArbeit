@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="537.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TabCol4">
+   <children>
+      <Button fx:id="CreateTable" layoutX="145.0" layoutY="445.0" mnemonicParsing="false" onAction="#CreateTableButtonOnClick" text="Create New Table">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Submit" layoutX="522.0" layoutY="445.0" mnemonicParsing="false" onAction="#SubmitButtonOnClick" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="TableName" layoutX="323.0" layoutY="30.0" text="TableName" textFill="#2740b9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="VierTabCol" layoutX="100.0" layoutY="66.0" prefHeight="221.0" prefWidth="557.0">
+        <columns>
+          <TableColumn fx:id="TabCol1" prefWidth="132.0" text="Header1" />
+          <TableColumn fx:id="TabCol2" prefWidth="132.0" text="Header2" />
+            <TableColumn fx:id="TabCol3" prefWidth="157.0" text="Header3" />
+            <TableColumn fx:id="TabCol4" prefWidth="135.0" text="Header4" />
+        </columns>
+      </TableView>
+      <TextField fx:id="ValueEins" layoutX="14.0" layoutY="392.0" />
+      <TextField fx:id="ValueZwei" layoutX="174.0" layoutY="392.0" />
+      <TextField fx:id="ValueDrei" layoutX="332.0" layoutY="392.0" />
+      <TextField fx:id="ValueVier" layoutX="492.0" layoutY="392.0" />
+      <Button fx:id="add" layoutX="657.0" layoutY="392.0" mnemonicParsing="false" onAction="#AddButtonOnClick" text="add" />
+      <Button fx:id="set" layoutX="660.0" layoutY="361.0" mnemonicParsing="false" onAction="#SetButtonOnClick" text="set" />
+      <TextField fx:id="HeaderName1" layoutX="14.0" layoutY="361.0" promptText="Enter HeaderName1" />
+      <TextField fx:id="HeaderName2" layoutX="174.0" layoutY="361.0" promptText="Enter HeaderName2" />
+      <TextField fx:id="HeaderName3" layoutX="332.0" layoutY="361.0" promptText="Enter HeaderName3" />
+      <TextField fx:id="HeaderName4" layoutX="492.0" layoutY="361.0" promptText="Enter HeaderName4" />
+      <Button fx:id="save" layoutX="343.0" layoutY="448.0" mnemonicParsing="false" onAction="#SaveButtonOnClick" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

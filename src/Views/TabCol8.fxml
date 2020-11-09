@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="514.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TabCol8">
+   <children>
+      <Button fx:id="CreateTable" layoutX="108.0" layoutY="443.0" mnemonicParsing="false" onAction="#CreateTableButtonOnClick" text="Create New Table">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Submit" layoutX="800.0" layoutY="444.0" mnemonicParsing="false" onAction="#SubmitButtonOnClick" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="AchtTabCol" layoutX="126.0" layoutY="79.0" prefHeight="200.0" prefWidth="770.0">
+        <columns>
+            <TableColumn fx:id="TabCol1" prefWidth="109.0" text="Header1" />
+          <TableColumn fx:id="TabCol2" prefWidth="113.0" text="Header2" />
+          <TableColumn fx:id="TabCol3" prefWidth="90.0" text="Header3" />
+            <TableColumn fx:id="TabCol4" prefWidth="85.0" text="Header4" />
+            <TableColumn fx:id="TabCol5" prefWidth="82.0" text="Header5" />
+            <TableColumn fx:id="TabCol6" prefWidth="92.0" text="Header6" />
+            <TableColumn fx:id="TabCol7" prefWidth="100.0" text="Header7" />
+            <TableColumn fx:id="TabCol8" prefWidth="98.0" text="Header8" />
+        </columns>
+      </TableView>
+      <Label fx:id="TableName" layoutX="448.0" layoutY="38.0" prefHeight="27.0" prefWidth="98.0" text="TableName" textFill="#1b2b90">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ValueEins" layoutX="11.0" layoutY="392.0" prefHeight="25.0" prefWidth="105.0" />
+      <TextField fx:id="ValueZwei" layoutX="116.0" layoutY="392.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="ValueDrei" layoutX="230.0" layoutY="392.0" prefHeight="25.0" prefWidth="123.0" />
+      <TextField fx:id="ValueVier" layoutX="353.0" layoutY="392.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="ValueFuenf" layoutX="467.0" layoutY="392.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="ValueSechs" layoutX="581.0" layoutY="392.0" prefHeight="25.0" prefWidth="114.0" />
+      <Button fx:id="add" layoutX="980.0" layoutY="392.0" mnemonicParsing="false" onAction="#AddButtonOnClick" text="add" />
+      <TextField fx:id="ValueSieben" layoutX="695.0" layoutY="392.0" prefHeight="25.0" prefWidth="105.0" />
+      <TextField fx:id="ValueAcht" layoutX="800.0" layoutY="392.0" prefHeight="25.0" prefWidth="114.0" />
+      <Button fx:id="save" layoutX="485.0" layoutY="447.0" mnemonicParsing="false" onAction="#SaveButtonOnClick" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="set" layoutX="982.0" layoutY="354.0" mnemonicParsing="false" onAction="#SetButtonOnClick" text="set" />
+      <TextField fx:id="HeaderName1" layoutX="11.0" layoutY="354.0" prefHeight="25.0" prefWidth="105.0" promptText="Enter HeaderName1" />
+      <TextField fx:id="HeaderName2" layoutX="116.0" layoutY="354.0" prefHeight="25.0" prefWidth="105.0" promptText="Enter HeaderName2" />
+      <TextField fx:id="HeaderName3" layoutX="221.0" layoutY="354.0" prefHeight="25.0" prefWidth="123.0" promptText="Enter HeaderName3" />
+      <TextField fx:id="HeaderName4" layoutX="345.0" layoutY="354.0" prefHeight="25.0" prefWidth="123.0" promptText="Enter HeaderName4" />
+      <TextField fx:id="HeaderName5" layoutX="467.0" layoutY="354.0" prefHeight="25.0" prefWidth="123.0" promptText="Enter HeaderName5" />
+      <TextField fx:id="HeaderName6" layoutX="590.0" layoutY="354.0" prefHeight="25.0" prefWidth="123.0" promptText="Enter HeaderName6" />
+      <TextField fx:id="HeaderName7" layoutX="713.0" layoutY="354.0" prefHeight="25.0" prefWidth="123.0" promptText="Enter HeaderName7" />
+      <TextField fx:id="HeaderName8" layoutX="835.0" layoutY="354.0" prefHeight="25.0" prefWidth="123.0" promptText="Enter HeaderName8" />
+   </children>
+</AnchorPane>

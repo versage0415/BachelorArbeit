@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TableSetting">
+   <children>
+      <Label layoutX="208.0" layoutY="46.0" prefHeight="35.0" prefWidth="149.0" text="Table Setting" textFill="#0d53cd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="97.0" layoutY="263.0" mnemonicParsing="false" onAction="#BackButtonOnClick" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textfield" layoutX="25.0" layoutY="107.0" prefHeight="25.0" prefWidth="213.0" promptText="Enter the Name Of Table" />
+      <ComboBox fx:id="Combobox1" layoutX="340.0" layoutY="107.0" prefHeight="25.0" prefWidth="213.0" promptText="Choice the Number of Column" />
+      <Button fx:id="CreateTable" layoutX="407.0" layoutY="263.0" mnemonicParsing="false" onAction="#CreateButtonOnClick" text="Create Table">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="message1" layoutX="173.0" layoutY="324.0" prefHeight="17.0" prefWidth="213.0" text="Please give a Table Name! " textFill="#e80f0f">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="message2" layoutX="112.0" layoutY="353.0" prefHeight="20.0" prefWidth="409.0" text="For this Exercise,please select a number of Column between 1 to 8!" textFill="#da0a0a">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

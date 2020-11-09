@@ -1,0 +1,50 @@
+
+
+.table-row-cell:empty{
+    -fx-background-color: white;
+}
+.table-row-cell:empty  .table-cell{
+    -fx-border-width: 0px;
+
+}
+.Login-bg{
+    -fx-background-color: linear-gradient(to top,#c31399,#9118fd) ;
+}
+.Register-bg{
+    -fx-background-color: linear-gradient(to top,#0082bc,#01d0db) ;
+}
+.text-field{
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 8px;
+}
+
+.btn-Login{
+    -fx-background-color: #9013fb;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 8px;
+}
+.lbl-status{
+    -fx-background-color: #c01397;
+    -fx-text-fill: #FFF;
+    -fx-alignment: center;
+    -fx-font-size: 16px ;
+    -fx-background-radius: 8px;
+}
+.lbl-user{
+
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-font-size: 16px ;
+    -fx-font-weight: 600;
+
+}
+
+.tab-pane{
+    -fx-tab-max-height: 0px;
+}
+.tab-pane .tab-header-area{
+    visibility: hidden;
+}

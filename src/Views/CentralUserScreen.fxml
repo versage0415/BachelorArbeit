@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="704.0" prefWidth="986.0" styleClass="Register-bg" stylesheets="@../TableStyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CentralUserScreen">
+   <children>
+      <VBox layoutY="38.0" prefHeight="665.0" prefWidth="180.0">
+         <children>
+            <Button fx:id="SelectOperator" mnemonicParsing="false" onAction="#SelectOperatorButton" prefHeight="93.0" prefWidth="184.0" style="-fx-background-color: #7cb079;" text="Select Operator" textFill="#b52727">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="30.0" />
+               </VBox.margin></Button>
+            <Button fx:id="GenerateExercice" mnemonicParsing="false" onAction="#GenerateExerciceButton" prefHeight="93.0" prefWidth="184.0" style="-fx-background-color: #7cb079;" text="Generate Exercice" textFill="#b52727">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></Button>
+            <Button fx:id="GetFeedback" mnemonicParsing="false" onAction="#GetFeedbackButton" prefHeight="93.0" prefWidth="184.0" style="-fx-background-color: #7cb079;" text="Get Feedback" textFill="#b52727">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin></Button>
+            <Button fx:id="AksQuestion" mnemonicParsing="false" onAction="#AksQuestionButton" prefHeight="93.0" prefWidth="184.0" style="-fx-background-color: #7cb079;" text="Aks Question" textFill="#b52727">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+         </children></VBox>
+      <MenuBar layoutY="-1.0" prefHeight="39.0" prefWidth="986.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="SceneUser" layoutX="208.0" layoutY="67.0" prefHeight="623.0" prefWidth="771.0" style="-fx-background-color: FFF; -fx-background-radius: 15px;">
+         <children>
+            <ImageView fitHeight="427.0" fitWidth="657.0" layoutX="73.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@StartApp1.png" />
+               </image></ImageView>
+            <Label alignment="CENTER" layoutX="118.0" layoutY="61.0" prefHeight="32.0" prefWidth="555.0" text="Welcome to the Multiple Choice Question Generator!" textFill="#2fa882">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font></Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

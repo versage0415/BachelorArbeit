@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="704.0" prefWidth="986.0" styleClass="Login-bg" stylesheets="@../TableStyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminScreen">
+   <children>
+      <MenuBar layoutX="1.0" prefHeight="39.0" prefWidth="986.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox layoutX="1.0" layoutY="39.0" prefHeight="665.0" prefWidth="180.0">
+         <children>
+            <Button fx:id="EditTable" mnemonicParsing="false" onAction="#EditTableButton" prefHeight="93.0" prefWidth="184.0" style="-fx-background-color: #1c2b45;" text="Edit Table" textFill="#b52727">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="30.0" />
+               </VBox.margin></Button>
+            <Button fx:id="EditQuestion" mnemonicParsing="false" onAction="#EditQuestionButton" prefHeight="93.0" prefWidth="184.0" style="-fx-background-color: #1c2b45;" text="Edit Questions" textFill="#b52727">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="GetFeedback" mnemonicParsing="false" onAction="#GetFeedbackButton" prefHeight="93.0" prefWidth="184.0" style="-fx-background-color: #1c2b45;" text="Get Feedback" textFill="#b52727">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="AnswerQuestion" mnemonicParsing="false" onAction="#AnswerQuestionButton" prefHeight="93.0" prefWidth="184.0" style="-fx-background-color: #1c2b45;" text="Answer Question" textFill="#b52727">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="SceneAdmin" layoutX="205.0" layoutY="64.0" prefHeight="623.0" prefWidth="771.0" style="-fx-background-color: FFF; -fx-background-radius: 15px;">
+         <children>
+            <ImageView fitHeight="430.0" fitWidth="600.0" layoutX="73.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@StartApp1.png" />
+               </image></ImageView>
+            <Label alignment="CENTER" layoutX="123.0" layoutY="54.0" prefHeight="32.0" prefWidth="536.0" text="Welcom To Multiple Choice Question Generator!" textFill="#2fa882">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

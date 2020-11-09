@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="529.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TabCol2">
+   <children>
+      <Label fx:id="TableName" layoutX="244.0" layoutY="39.0" text="TableName">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ZweiTabCol" layoutX="168.0" layoutY="76.0" prefHeight="240.0" prefWidth="242.0">
+        <columns>
+          <TableColumn fx:id="TabCol1" prefWidth="118.0" text="Header1" />
+          <TableColumn fx:id="TabCol2" prefWidth="121.0" text="Header2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="ValueEins" layoutX="152.0" layoutY="393.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="ValueZwei" layoutX="289.0" layoutY="393.0" prefHeight="25.0" prefWidth="130.0" />
+      <Button fx:id="add" layoutX="442.0" layoutY="393.0" mnemonicParsing="false" onAction="#AddButtonOnClick" text="add" />
+      <Button fx:id="CreateTable" layoutX="79.0" layoutY="456.0" mnemonicParsing="false" onAction="#CreateNewTableButtonOnClick" text="Create New Table">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Submit" layoutX="422.0" layoutY="456.0" mnemonicParsing="false" onAction="#SubmitButtonOnClick" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="HeaderName1" layoutX="153.0" layoutY="365.0" prefHeight="25.0" prefWidth="130.0" promptText="Enter HeaderName1" />
+      <TextField fx:id="HeaderName2" layoutX="291.0" layoutY="365.0" prefHeight="25.0" prefWidth="130.0" promptText="Enter HeaderName2" />
+      <Button fx:id="set" layoutX="440.0" layoutY="365.0" mnemonicParsing="false" onAction="#SetButtonOnClick" prefHeight="25.0" prefWidth="37.0" text="set" />
+      <Button fx:id="save" layoutX="274.0" layoutY="459.0" mnemonicParsing="false" onAction="#SaveButtonOnClick" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
