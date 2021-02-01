@@ -24,3 +24,8 @@ integrieren, um zur Verfügung für die Studenten zu stellen.
 ![Aufgabe2(Union)](https://user-images.githubusercontent.com/72659498/106408954-c40f8200-643f-11eb-92a7-cc684f565100.png)
 ![Aufgabe3](https://user-images.githubusercontent.com/72659498/106408979-ceca1700-643f-11eb-920d-68ee82e39ee6.png)
 ![Aufgabe4(Endresult Projektion+Union)](https://user-images.githubusercontent.com/72659498/106409000-ddb0c980-643f-11eb-9fe9-ec5ba0b1fdaf.png)
+
+![screen1](https://user-images.githubusercontent.com/72659498/106409239-67609700-6440-11eb-8982-ff70a94c2061.png)
+![Screenshot (28)](https://user-images.githubusercontent.com/72659498/106409252-6e87a500-6440-11eb-961c-ffba69368fa9.png)
+![Screenshot (31)](https://user-images.githubusercontent.com/72659498/106409281-7cd5c100-6440-11eb-86d1-627f4e00be29.png)
+![Screenshot (27)](https://user-images.githubusercontent.com/72659498/106409291-83fccf00-6440-11eb-8a4f-9f70bf5bf81b.png)
