@@ -17,3 +17,4 @@ zweite teile der Arbeit war diese Anwendung in ein E-Assessment System zu
 integrieren, um zur Verfügung für die Studenten zu stellen. 
 
 ![Home](https://user-images.githubusercontent.com/72659498/106408660-1ef4a980-643f-11eb-8e58-558900ae2e3b.png)
+![Aufgabe1(Projektion)](https://user-images.githubusercontent.com/72659498/106408829-84489a80-643f-11eb-95d0-f6f81947042b.png)
